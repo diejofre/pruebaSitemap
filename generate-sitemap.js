@@ -11,7 +11,7 @@ const routes = [
 ];
 
 async function generateSitemap() {
-  const sitemap = new SitemapStream({ hostname: 'https://example.com' }); // Cambia por tu dominio
+  const sitemap = new SitemapStream({ hostname: 'https://prueba-sitemap.vercel.app/' });
   const writeStream = createWriteStream('./public/sitemap.xml');
   sitemap.pipe(writeStream);
 
